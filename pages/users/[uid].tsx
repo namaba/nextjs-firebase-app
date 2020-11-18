@@ -74,14 +74,14 @@ export default function UserShow() {
           <div className="row justify-content-center mb-3">
             <div className="col-12 col-md-6">
               <form onSubmit={onSubmit}>
-                <textarea
+                {/* <textarea
                   className="form-control"
                   placeholder="お元気ですか？"
                   rows={6}
                   valud={body}
                   onChange={(e) => setBody(e.target.value)}
                   required
-                ></textarea>
+                ></textarea> */}
                 <div className="m-3">
                   {isSending ? (
                     <div
