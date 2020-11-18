@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { User } from "../../models/User";
 import firebase from "firebase/app";
 import Layout from "../../components/Layout";
@@ -38,7 +38,7 @@ export default function UserShow() {
     loadUser();
   }, [query.uid]);
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     console.log(body);
     e.preventDefault();
     setIsSending(true);
