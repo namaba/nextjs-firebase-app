@@ -136,14 +136,14 @@ export default function QuestionsShow() {
         <h2 className="h4">回答する</h2>
 
         <form onSubmit={onSubmit}>
-          <textarea
+          {/* <textarea
             className="form-control"
             placeholder="お元気ですか？"
-            row={6}
+            row="6"
             value={body}
             onChange={(e) => setBody(e.target.value)}
             required
-          ></textarea>
+          ></textarea> */}
           <div className="m-3">
             {isSending ? (
               <div
