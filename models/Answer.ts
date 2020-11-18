@@ -1,10 +1,9 @@
 import firebase from "firebase/app";
 
-export interface Question {
+export interface Answer {
   id: string;
-  senderUid: string;
-  receiverUid: string;
+  uid: string;
+  questionId: string;
   body: string;
-  isReplied: boolean;
   createdAt: firebase.firestore.Timestamp;
 }
