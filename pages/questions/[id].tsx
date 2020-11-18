@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useAuthentication } from "../../hooks/authentication";
 import firebase from "firebase/app";
@@ -60,7 +60,7 @@ export default function QuestionsShow() {
     loadData();
   }, [query.id]);
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSending(true);
 
